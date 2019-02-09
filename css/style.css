@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?a42ag6');
+    src:  url('fonts/icomoon.eot?a42ag6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?a42ag6') format('truetype'),
+    url('fonts/icomoon.woff?a42ag6') format('woff'),
+    url('fonts/icomoon.svg?a42ag6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-send:before {
+  content: "\f1d8";
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1366px;
+    min-width: 725px;
+    margin: 0 auto;
+}
+header {
+    height: 800px;
+    background-image: url(img/slider.jpg);
+    padding-left: 98px;
+}
+.logo {
+    float: left;
+    margin-top: 63px;
+    background: url(img/logo.png);
+    width: 185px;
+    height: 22px;
+}
+.menu {
+    float: left;
+    list-style-type: none;
+    margin-top: 63px;
+    margin-left: 382px;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a {
+    height: 27px;
+    text-decoration: none;
+    padding:  0 20px;
+    font-family: Montserrat;
+    color:  #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 27px;
+}
+.menu li a:hover {
+    color:  #212121;
+    font-size: 14px;
+    line-height: 27px;
+    border-bottom: 2px solid #000;
+}
+img[alt=search] {
+    float: left;
+    margin-top: 63px;
+    margin-left: 21px;
+}
+.text {
+    clear: both;
+    float: left;
+    margin-top: 288px;
+}
+.text h3 {
+    color:  #43a047;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 13px;
+    margin-bottom: 22px;
+}
+.text h2 {
+    color:  #212121;
+    font-size: 55px;
+    font-weight: 100;
+    line-height: 43px;
+    margin-bottom: 34px;
+}
+.text p {
+    color:  #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+.text a {
+    display: block;
+    background-color:  #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    border-radius: 22px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    color: #212121;
+    font-weight: 700;
+    font-size: 15px;
+}
+.text a:hover {
+    background: #fff url('img/arrow1.png') no-repeat 173px 17px;
+}
+.text a:active {
+    box-shadow: none;
+}
+.circles {
+    clear: both;
+    width: 120px;
+    height: 150px;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle {
+    float: left;
+    border-radius: 50%;
+    background-color: rgba(33, 33, 33, 0.2);
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px;
+}
+.circle:hover {
+    border-radius: 50%;
+    background-color:  #212121;
+    width: 35px;
+    height: 35px;
+    margin: 2px 2px;
+}
+
+@media screen and (max-width: 1320px) {
+    .chair3 {
+        clear: both;
+        margin-top: 30px;
+    }
+    .chair4 {
+        margin-top: 30px;
+    }
+    .chairsname > a {
+        float: left;
+        margin-left: 30px;
+        margin-right: 0;
+    }
+}
