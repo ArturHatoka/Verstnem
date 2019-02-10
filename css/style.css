@@ -30,22 +30,27 @@ html {
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
 }
 * {
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-image: url(../img/slider.jpg);
-    background-size: 100%;
-    height: 800px;
-}
-
-.slider {
+.head .slider {
     max-width: 1340px;
     min-width: 725px;
     margin: 0 auto;
+}
+.slider .img-head{
+    background: url(../img/slider.jpg);
+    position: absolute;
+    background-size: cover;
+    float: left;
+    z-index: -1;
+    margin-top: -90px;
+    width: 100%;
+    height: 800px;
 }
 .navbar {
     width: 100%;
@@ -193,10 +198,7 @@ header {
     position: relative;
     float: left;
     width: 100%;
-    max-width: 1340px;
-    min-width: 725px;
     height: 369px;
-    margin-top: 120px;
 }
 
 .tab-control {
@@ -231,7 +233,7 @@ header {
 }
 
 .btn-ghost {
-    margin-right: 118px;
+    margin-right: 97px;
     width: 179px;
     height: 13px;
     float: right;
@@ -268,8 +270,8 @@ header {
 }
 
 .tab-content img {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
 }
 
 .tabl-inner{
@@ -283,7 +285,8 @@ header {
     box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 48px;
     height: 48px;
-    margin-left: 101px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 52px;
 }
 .tabl-inner img{
@@ -311,26 +314,374 @@ header {
 }
 .tab-content li:hover .tabl-inner{
     display: block;
-    margin-top: -254px;
-    background: rgba(254, 254, 255, 0.65);
-    width: 248px;
-    height: 248px;
+    margin-top: -233px;
+    background: rgba(254, 254, 255, 0.76);
+    width: 228px;
+    height: 228px;
     border-width: 1px;
     border-color:  #9c9c9c;
     border-style: solid;
 }
-
-.promo-product{
+.promo {
+    position: relative;
+    float: left;
     width: 100%;
     height: 683px;
+}
+
+.promo-product{
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    width: 100%;
+    height: 683px;
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
 }
 .promo-prod-1{
     width: 50%;
     height: 683px;
+    background: url("../img/promo1.jpg");
+    background-size: 100%;
+    margin: 0;
 }
-
 
 .promo-prod-2 {
     width: 50%;
     height: 683px;
+    background: url("../img/promo2.jpg");
+    background-size: 100%;
+    margin: 0;
+}
+
+@media (max-width:1223px) {
+    .promo-product{
+        padding-top: 220px;
+    }
+}
+.promo-content{
+    margin-top: 228px;
+    margin-left: 51px;
+}
+.promo-content li{
+    list-style-type: none;
+}
+
+.promo-content .cont-1{
+    color:  #1e88e5;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.promo-content .cont-2 {
+    color: #212121;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+.promo-content .cont-3{
+    color:  #6c6c6c;
+    font-size: 13.99px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.promo-content a {
+    display: block;
+    background-color:  #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    border-radius: 22px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 47px;
+    color: #212121;
+    font-weight: 700;
+    font-family: Montserrat;
+    font-size: 18px;
+    margin-top: 24px;
+}
+.promo-content a:hover {
+    background: #fff url('../img/arrow1.png') no-repeat 173px 17px;
+}
+.promo-content a:active {
+    box-shadow: none;
+}
+.trending {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 1069px;
+}
+.trending-products {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 80px;
+}
+.trending-products .title{
+    color:  #212121;
+    line-height: 27px;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    margin-left: 98px;
+    width: 361px;
+    height: 35px;
+}
+.trending-products .btn-ghost{
+    margin-top: -35px;
+}
+
+.trending-content{
+    position: relative;
+    float: left;
+    width: 86%;
+    height: 869px;
+    margin-top: 15px;
+    margin-left: 98px;
+}
+.trending-content img{
+    width: 30%;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+.hot-deals {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 800px;
+}
+.slider .img-hot {
+    background: url(../img/slider1.jpg);
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    float: left;
+    z-index: -1;
+    margin-top: -90px;
+}
+.hot-deals .content h3{
+    color:  #e53935;
+}
+
+.exclusive-product{
+    position: relative;
+    float: left;
+    width: 86%;
+    height: 570px;
+    display: inline;
+    margin-left: 83px;
+}
+.exclusive-back{
+    background-image: url("../img/prod11.jpg");
+    background-size: 100%;
+    width: 45%;
+    height: 535px;
+    float: left;
+    margin-top: 14px;
+    margin-right: 15px;
+
+}
+.exclusive-content1{
+    width: 350px;
+    height: 535px;
+    float: left;
+    padding-left: 26px;
+    padding-top: 186px;
+}
+.exclusive-content2{
+    width: 50%;
+    float: left;
+}
+.exclusive-content2 img{
+    padding: 15px;
+    width: 43%;
+
+}
+.exclusive-content1{
+}
+.exclusive-content1 li{
+    list-style-type: none;
+}
+
+.exclusive-content1 .cont-1{
+    color:  #1e88e5;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.exclusive-content1 .cont-2 {
+    color: #212121;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+.exclusive-content1 .cont-3{
+    color:  #6c6c6c;
+    font-size: 13px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.exclusive-content1 a {
+    display: block;
+    background-color:  #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    border-radius: 22px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 47px;
+    color: #212121;
+    font-weight: 700;
+    font-family: Montserrat;
+    font-size: 18px;
+    margin-top: 24px;
+}
+.exclusive-content1 a:hover {
+    background: #fff url('../img/arrow1.png') no-repeat 173px 17px;
+}
+.exclusive-content1 a:active {
+    box-shadow: none;
+}
+
+.mobile-app{
+    position: relative;
+    float: left;
+    background-image: url("../img/back.jpg");
+    margin-top: 80px;
+    width: 100%;
+    height: 516px;
+}
+.mobile-content{
+    padding-top: 99px;
+    padding-left: 110px;
+}
+.mobile-content h3{
+    color:  #6c6c6c;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.mobile-content h2{
+    color:  #212121;
+    font-size: 62px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 72px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.mobile-content p{
+    color:  #6c6c6c;
+    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.mobile-content img{
+    padding: 33px 5px;
+}
+footer{
+    background-color: #f7f7f7;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 80px;
+}
+footer h3{
+    color:  #6c6c6c;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-bottom: 16px;
+}
+footer p{
+    color:  #212121;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 22px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+footer li{
+    font-family: Montserrat;
+    color:  #212121;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.block-1{
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 150px;
+    padding-left: 100px;
+}
+.block-p-1{
+    padding-bottom: 16px;
+}
+.block-2 {
+    position: relative;
+    float: left;
+    width: 422px;
+    height: 139px;
+}
+.block-2 ul{
+    list-style-type: none;
+    position: relative;
+}
+.block-ul-1{
+    float: left;
+}
+.block-ul-2{
+    float: right;
+}
+.block-3{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 150px;
+    padding-left: 60px;
+}
+.block-3 p{
+    padding-bottom: 20px;
+}
+.block-3 form input{
+    width: 370px;
+    padding: 12px;
+}
+.email{
+    background-image: url("../img/email.png");
+    background-repeat: no-repeat;
+}
+.copyright{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 11px;
+}
+
+.social{
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 30px;
+}
+
+.terms {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 11px;
 }
