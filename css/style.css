@@ -10,7 +10,6 @@
     font-style: normal;
 }
 [class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -193,6 +192,22 @@ body {
         margin-right: 0;
     }
 }
+.head-fon{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 360px;
+    margin-top: -90px;
+}
+.head-fon h2{
+    color:  #212121;
+    font-size: 62px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 72px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-left: 90px;
+    padding-top: 240px;
+    width: 800px;
+}
 
 .featured-product{
     position: relative;
@@ -231,7 +246,75 @@ body {
     text-align: left;
     border-bottom: 3px solid #000 ;
 }
+.product-control{
+    width: 750px;
+    height: 35px;
+    padding-top: 60px;
+    padding-left: 75px;
+}
+.product-control li {
+    display: inline-block;
+    text-align: left;
+}
 
+.product-control li a {
+    height: 27px;
+    text-decoration: none;
+    padding:  0 20px;
+    line-height: 27px;
+    font-family: Montserrat;
+    color:  #6c6c6c;;
+    font-size: 17px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.product-control li a:hover {
+    color:  #212121;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 3px solid #000 ;
+}
+.product-det-control{
+    height: 35px;
+    padding-top: 35px;
+    text-align: center;
+}
+.product-det-control ul{
+    background-color: #f7f7f7;
+    height: 60px;
+}
+.product-det-control li {
+    display: inline-block;
+    padding-top: 17px;
+}
+
+.product-det-control li a {
+    height: 27px;
+    text-decoration: none;
+    padding:  0 20px;
+    line-height: 27px;
+    font-family: Montserrat;
+    color:  #6c6c6c;;
+    font-size: 17px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.product-det-control li a:hover {
+    color:  #212121;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+.product-ref{
+    position: relative;
+    width: 150px;
+    padding-left: 95px;
+    margin-left:auto;
+    margin-right: auto;
+}
 .btn-ghost {
     margin-right: 97px;
     width: 179px;
@@ -422,7 +505,7 @@ body {
     position: relative;
     float: left;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 90px;
 }
 .trending-products .title{
     color:  #212121;
@@ -439,14 +522,53 @@ body {
 }
 
 .trending-content{
+     position: relative;
+     float: left;
+     width: 86%;
+     height: 869px;
+     margin-top: 15px;
+     margin-left: 98px;
+ }
+.trending-content img{
+    width: 30%;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.related {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 669px;
+}
+.related-products {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 90px;
+}
+.related-products .title{
+    color:  #212121;
+    line-height: 27px;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    margin-left: 98px;
+    width: 361px;
+    height: 35px;
+}
+.related-products .btn-ghost{
+    margin-top: -35px;
+}
+.related-content{
     position: relative;
     float: left;
     width: 86%;
-    height: 869px;
+    height: 439px;
     margin-top: 15px;
     margin-left: 98px;
 }
-.trending-content img{
+.related-content img{
     width: 30%;
     padding-right: 30px;
     padding-top: 30px;
@@ -706,4 +828,160 @@ footer li{
     font-weight: 700;
     line-height: 26px;/* Приближение из-за подстановки шрифтов */
     text-align: right;
+}
+.products{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 1800px;
+}
+
+.product-img{
+    position: relative;
+    float: left;
+    width: 86%;
+    height: 1620px;
+    margin-left: 98px;
+}
+.product-img img {
+    width: 30%;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+.location{
+    width: 86%;
+    margin-left: 70px;
+
+    padding: 0 15px;
+}
+.local-1{
+    float: left;
+    width: 349px;
+    height: 369px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+
+.local-1 ul{
+    list-style-type: none;
+    padding-top: 50px;
+    border-width: 1px;
+    opacity: 0.9;
+    border-color:  #9c9c9c;
+    border-style: solid;
+    height: 269px;
+}
+.local-1 li{
+    text-align: center;
+}
+
+.local-1 .h3{
+    color:  #212121;
+    font-size: 21px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 30px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.local-1 .h4{
+    color:  #6c6c6c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 20.082px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    padding-top: 10px;
+}
+.local-1 .p{
+    color:  #212121;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 20.082px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.local-1 .p2{
+    color:  #6c6c6c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 20.082px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.details-img{
+    position: relative;
+    float: left;
+    padding-left: 80px;
+    padding-top: 80px;
+}
+.details-opt{
+    position: relative;
+    float: left;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+.details-logo-img{
+    position: absolute;
+    float: left;
+    padding-left: 165px;
+}
+.details-opt h2{
+    color:  #212121;
+    font-size: 35.98px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+}
+.details-opt h3{
+    color:  #e53935;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.details-opt .price-opt{
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 48px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.details-opt .price{
+    color:  #212121;
+    font-size: 72px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 48px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.details-opt p{
+    color:  #212121;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-top: 10px;
+}
+.details{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 811px;
+}
+.details-opt a {
+    display: block;
+    background-color:  #f44336;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 452px;
+    height: 50px;
+    border-radius: 34px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 52px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: Montserrat;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+.details-opt a:hover {
+    background: #f44336 url('../img/arrow.png') no-repeat 300px 14px;
+}
+.details-opt a:active {
+    box-shadow: none;
 }
